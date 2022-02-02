@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>ServletRegistrarUsuario</servlet-name>
+        <servlet-class>com.chat.servlets.ServletRegistrarUsuario</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletActualizarMensajes</servlet-name>
+        <servlet-class>com.chat.servlets.ServletActualizarMensajes</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletEnviarMensaje</servlet-name>
+        <servlet-class>com.chat.servlets.ServletEnviarMensaje</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletRegistrarUsuario</servlet-name>
+        <url-pattern>/ServletRegistrarUsuario</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletActualizarMensajes</servlet-name>
+        <url-pattern>/ServletActualizarMensajes</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletEnviarMensaje</servlet-name>
+        <url-pattern>/ServletEnviarMensaje</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
